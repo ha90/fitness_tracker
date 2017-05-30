@@ -1,6 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
 
-# Create your views here.
+# main page
 def index(request):
-    return HttpResponse("Welcome to Fitness tracker home page.")
+    template = loader.get_template('fitnessTracker/index.html')
+    return render(request, 'fitnessTracker/index.html')
+
+# measurement page
+def measurements(request):
+    return HttpResponse("Coming Soon...")
+
+    
