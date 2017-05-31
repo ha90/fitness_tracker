@@ -4,11 +4,10 @@ from django.template import loader
 
 # main page
 def index(request):
-    template = loader.get_template('fitnessTracker/index.html')
     return render(request, 'fitnessTracker/index.html')
 
 # measurement page
 def measurements(request):
-    return HttpResponse("Coming Soon...")
+    return render(request, 'fitnessTracker/measurements.html')
 
     

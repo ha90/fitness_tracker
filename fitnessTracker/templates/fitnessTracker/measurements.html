@@ -1,0 +1,9 @@
+<p> Previous measurement logs here </p>
+<br/><br/>
+
+<form method="post">
+{% csrf_token %}
+Weight <input type="input" name="weight"/>
+Waist  <input type="input" name="waist"/>
+<input type="submit" name="submit" value="Log"/>
+</form>
